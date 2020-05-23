@@ -1,0 +1,23 @@
+<html>
+ <head>
+   <title>Green Screen Thing</title>
+   <script src="capture.js"></script>
+ </head>
+ <body> 
+   <div class="contentarea">
+       <button id="startback">Set background</button> 
+       <button id="startbutton" disabled>Test photo</button> 
+       <button id="startvideobutton" onclick="window.videoswitch()" disabled>Toggle Video</button>
+     <div class="camera">
+        <video id="video"></video>
+        <canvas id="canvas" style="visibility:hidden;height:0px;"></canvas>
+     </div>
+     <div class="output">
+        <canvas id="result"></canvas>
+        <img id="photo" alt="The screen capture will appear in this box." hidden> 
+        <img id="bgphoto" alt="The screen capture will appear in this box." hidden> 
+     </div>
+     <canvas id="copy"></canvas>
+   </div>
+ </body>
+</html>
